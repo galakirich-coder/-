@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Штучний інтелект</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: rgb(42, 42, 61);     
+      color: rgb(201, 201, 211);
+      font-family: 'Ruslan Display', fantasy;
+      font-size: 20px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: rgb(42, 42, 61);
+      border-bottom: 4px solid rgb(160, 157, 138);
+    }
+
+    h1 {
+      font-size: 52px;
+      color: rgb(169, 173, 156);
+      margin: 0;
+      animation: zyavlennya 2s;   
+    }
+
+    h2 {
+      color: rgb(160, 157, 138);
+      font-size: 34px;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      padding: 15px;
+      background-color: rgb(42, 42, 61);
+    }
+
+    .knopka {
+      display: inline-block;
+      background-color: rgb(160, 157, 138);
+      color: rgb(42, 42, 61);
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 6px;
+      border-radius: 15px;
+      border: 3px solid rgb(201, 201, 211);
+      font-size: 18px;
+    }
+
+    .knopka:hover {
+      background-color: rgb(201, 201, 211);
+      transform: scale(1.1);  
+    }
+
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: rgb(42, 42, 61);
+      border: 3px solid rgb(160, 157, 138);
+      border-radius: 20px;
+    }
+
+    img, svg {
+      display: block;
+      margin: 15px auto;
+    }
+
+
+    .robot {
+      animation: litaye 3s infinite;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .pidpys {
+      text-align: center;
+      font-size: 16px;
+      color: lightblue;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgb(42, 42, 61);
+      border-top: 4px solid rgb(160, 157, 138);
+      margin-top: 30px;
+    }
+
+    @keyframes zyavlennya {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes litaye {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>✨ Штучний інтелект ✨</h1>
+    <p>Сайт про те, як комп'ютери навчилися «думати»</p>
+
+
+    <svg class="robot" width="160" height="180" viewBox="0 0 160 180">
+      <line x1="80" y1="10" x2="80" y2="30" stroke="gold" stroke-width="4"/>
+      <circle cx="80" cy="10" r="7" fill="red"/>
+      <rect x="30" y="30" width="100" height="80" rx="15" fill="silver" stroke="white" stroke-width="3"/>
+      <circle cx="58" cy="65" r="12" fill="deepskyblue"/>
+      <circle cx="102" cy="65" r="12" fill="deepskyblue"/>
+      <rect x="55" y="88" width="50" height="10" rx="5" fill="navy"/>
+      <rect x="45" y="115" width="70" height="55" rx="10" fill="gray" stroke="white" stroke-width="3"/>
+      <circle cx="80" cy="142" r="10" fill="gold"/>
+    </svg>
+  </header>
+
+  <!-- меню -->
+  <nav>
+    <a class="knopka" href="#istoriya">Історія</a>
+    <a class="knopka" href="#shcho-robyt">Що робить ШІ</a>
+    <a class="knopka" href="#zastosuvannya">Де застосовується</a>
+    <a class="knopka" href="#posylannya">Корисні посилання</a>
+  </nav>
+
+  <!-- РОЗДІЛ 1 -->
+  <section id="istoriya">
+    <h2>📜 Коли з'явився ШІ?</h2>
+    <p>
+      Штучний інтелект — це коли комп'ютер або програма вміє робити те, що
+      зазвичай робить людина: вчитися, розуміти мову, розпізнавати картинки
+      й приймати рішення.
+    </p>
+
+    <ul>
+      <li><b>1950 рік</b> — вчений Алан Тюрінг запитав: «Чи можуть машини думати?» і придумав тест Тюрінга.</li>
+      <li><b>1956 рік</b> — на конференції в Дартмуті вперше з'явилася назва «штучний інтелект».</li>
+      <li><b>1997 рік</b> — комп'ютер Deep Blue переміг чемпіона світу з шахів Гаррі Каспарова.</li>
+      <li><b>2016 рік</b> — програма AlphaGo перемогла чемпіона з гри го.</li>
+      <li><b>2022 рік</b> — з'явився ChatGPT, і ШІ став відомий усім.</li>
+    </ul>
+
+    <svg width="200" height="130" viewBox="0 0 200 130">
+      <ellipse cx="100" cy="65" rx="85" ry="55" fill="pink" stroke="white" stroke-width="3"/>
+      <path d="M100 12 Q90 40 100 65 Q110 90 100 118" stroke="deeppink" stroke-width="3" fill="none"/>
+      <path d="M45 45 Q65 35 80 55" stroke="deeppink" stroke-width="3" fill="none"/>
+      <path d="M155 45 Q135 35 120 55" stroke="deeppink" stroke-width="3" fill="none"/>
+      <path d="M45 85 Q65 95 80 78" stroke="deeppink" stroke-width="3" fill="none"/>
+      <path d="M155 85 Q135 95 120 78" stroke="deeppink" stroke-width="3" fill="none"/>
+    </svg>
+    <p class="pidpys">Нейронні мережі працюють схоже на мозок людини</p>
+  </section>
+
+
+  <section id="shcho-robyt">
+    <h2>🤖 Що робить штучний інтелект?</h2>
+    <p>ШІ вчиться на великій кількості прикладів (це називається <i>машинне навчання</i>). Ось що він уміє:</p>
+    <ul>
+      <li>розпізнавати обличчя та предмети на фото;</li>
+      <li>розуміти голос (наприклад, голосові помічники в телефоні);</li>
+      <li>перекладати тексти з однієї мови на іншу;</li>
+      <li>писати тексти, відповідати на питання;</li>
+      <li>малювати картинки за описом;</li>
+      <li>радити фільми та музику, які нам сподобаються.</li>
+    </ul>
+  </section>
+
+
+  <section id="zastosuvannya">
+    <h2>🌍 Де застосовується ШІ?</h2>
+    <ul>
+      <li>🏥 <b>Медицина</b> — допомагає лікарям знаходити хвороби на знімках.</li>
+      <li>🚗 <b>Транспорт</b> — безпілотні автомобілі та розумні навігатори.</li>
+      <li>📚 <b>Освіта</b> — програми для вивчення мов та пояснення тем.</li>
+      <li>📱 <b>Смартфони</b> — камера, клавіатура, голосові помічники.</li>
+      <li>🎮 <b>Ігри</b> — розумні супротивники та персонажі.</li>
+      <li>🌾 <b>Сільське господарство</b> — дрони стежать за полями.</li>
+    </ul>
+
+
+    <svg width="100" height="170" viewBox="0 0 100 170">
+      <rect x="10" y="5" width="80" height="160" rx="15" fill="black" stroke="white" stroke-width="3"/>
+      <rect x="18" y="22" width="64" height="120" fill="deepskyblue"/>
+      <circle cx="50" cy="82" r="18" fill="white"/>
+      <circle cx="50" cy="82" r="8" fill="navy"/>
+      <circle cx="50" cy="153" r="5" fill="gray"/>
+    </svg>
+    <p class="pidpys">ШІ живе навіть у твоєму телефоні!</p>
+  </section>
+
+
+  <section id="posylannya">
+    <h2>🔗 Дізнатися більше</h2>
+    <p style="text-align:center;">Натисни на кнопку, щоб відкрити сторінку:</p>
+    <p style="text-align:center;">
+      <a class="knopka" href="https://uk.wikipedia.org/wiki/Штучний_інтелект" target="_blank">Вікіпедія про ШІ</a>
+      <a class="knopka" href="https://uk.wikipedia.org/wiki/Алан_Тюрінг" target="_blank">Алан Тюрінг</a>
+      <a class="knopka" href="https://uk.wikipedia.org/wiki/Машинне_навчання" target="_blank">Машинне навчання</a>
+      <a class="knopka" href="https://claude.ai" target="_blank">Claude</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>Мій проєкт з інформатики 💙💛</p>
+    <p>Зробила: Кирич Галина, КІ-11</p>
+  </footer>
+
+</body>
+</html>
